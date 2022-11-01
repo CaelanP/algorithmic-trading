@@ -13,6 +13,7 @@ https://www.doi.gov/sites/doi.gov/files/migrated/ethics/forms/upload/stock_act_s
 
 Potential data sets to pull stock/options from:  
 Regarding both stocks and options, with Interactive Brokers it seems it can be setup to pull information from them, and I have access to read options contracts as well as permissions to trade stocks, need to update this link with something more informative but this is a rough idea https://www.interactivebrokers.com/en/?f=%2Fen%2Fsoftware%2Fhighlights%2FapiHighlights.php  
+Can similarly get access to stocks and options through RBC's portal  
 Stocks  
 Finviz provides information for float, short float and short float ratio https://finviz.com/screener.ashx?v=111&ft=4  
 Options  
