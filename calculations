@@ -2,6 +2,8 @@
 We want to get the high, low, open, close, volume, time of a stock in any duration of time(minute, hour, day, month). We want the history of the past 30 bars
 Duration = duration of time, start with days not including weekends that we are looking at stocks. For instance a duration of 21 days will only yeild 15 trading days (21/7 is 3 weeks, 2 days are weekend, leaves 15 days)
 Volume list is just the volume, for the amount of days dictated in duration
+Low list is a list with the past duration amount of lows
+High list is the same concept as low list, but with the high values
 Average Volume = sum(volume list)/duration
 Delta = option change in $ / stock change in $
   Requires the value of an option today, minus the value of the same option yesterday divided by the value of a stock today (value it closed at) minus the value it closed at yesterday (value it closed at yesterday)
@@ -11,8 +13,6 @@ Short Float Ratio = short float/average volume(30 days or so)
 Simple Moving Average = sum(close list)/duration
 Volatility = high - low
 Volatility % = ((high - low)/close) * 100
-Low list is a list with the past duration amount of lows
-  High list is the same concept, but with the high values
 20 day high/low =  if min(low list) == today low: true means new low, if max(high list) == today high: true means new high
 bull bar = if high >= close > open: true means the bar is a bull bar
 bear bar = if low <= close < open: true means the bar is a bear bar
