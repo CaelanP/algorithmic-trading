@@ -4,7 +4,7 @@ Find the name(s) of those of interest and find what stock they have traded for.
 Copy the action that has taken place and send a trade request automatically to an online broker.  
 This is the form for proceeding with getting the public information. 
 https://ethics.od.nih.gov/oge-form-201  
-This one seems better and more direct of a purpose of what is required.  
-https://efdsearch.senate.gov/search/
+This one seems better and more direct of a purpose of what is required.
+https://efdsearch.senate.gov/search/  
 This outlines the purpose of it
 https://www.doi.gov/sites/doi.gov/files/migrated/ethics/forms/upload/stock_act_summary_5_22_2017.pdf
