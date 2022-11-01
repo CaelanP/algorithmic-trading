@@ -3,7 +3,7 @@ Delta = option change in $ / stock change in $
 Float = # of tradable shares available to the public
 Short Float = (# of shorted stocks / float) * 100
 Short Float Ratio = short float/average volume(30 days or so)
-Moving Average = sum(close list)/duration
+Simple Moving Average = sum(close list)/duration
 Volatility = high - low
 Volatility % = ((high - low)/close) * 100
 20 day high/low =  if min(low list) == today low: new low, if max(high(high list) == today high: new high
