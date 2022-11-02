@@ -23,3 +23,7 @@ Entry bar: The bar that a trade is entered on.
 Follow-through: Bar(s) after a signal or entry bar.
 Stop limit/price: Price to get out of a trade at.
 Context: The bars to the left, or the bars prior to the current bar being analyzed.
+Inside bar: A bar that is engulfed by the prior bar. From the high to low the values are less than the bar before it.
+Outside bar: A bar that englufs the prior bar. From the high to low the values are greater than the bar before it.
+Bull bar: A bar that has a close higher than its open.
+Bear bar: A bar that has a close lower than its open.
