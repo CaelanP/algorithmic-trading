@@ -15,15 +15,22 @@ Lower high: As a stock trends upwards, it creates lower highs, when it devitates
 Trading range: When a security trades within a range, over a period of time.
 Reversal: When a trend goes from a bull trend, to a bear trend; price goes from increasing to decreasing or vice versa.
 Breakout: When the price breaks out of any previous price point or point of resistance/support.
-Pullback: When the price moves in an opposite direction to a trend and then continues with the trend. If it does not continue with the trend then it is simply a reversal.
+Pullback: In a bull trend, when the low of a bar goes below the low of the prior bar. In a bear trend, when the high of a bar goes above the high of the prior bar. A large tail on top or bottom indicates a pullback on a smaller time frame.
+Implied pullback: A pullback on a lower time frame. In a bull trend, a doji bar or bear bar even if it hasn't went below the low of the prior bar. In a bear trend, a doji or bull bar even if it hasn't went above the high or the prior bar.
 Swing trade: A trade with a longer duration than a scalp trade. Usually ranges from hours to days to months. Higher probability, lower reward, higher risk.
 Scalp trade: A trade with a generally short duration, shorter than a swing trade generally. Usually ranges from seconds to minutes to hours. Low probability, high rewards, low risk.
 Signal bar: The bar that signals to enter a trade.
 Entry bar: The bar that a trade is entered on.
-Follow-through: Bar(s) after a signal or entry bar.
+Follow-through/confirmation: Bar(s) after a signal or entry bar.
 Stop loss/limit/price: Price to get out of a trade at. Or set price to close a trade at.
 Context: The bars to the left, or the bars prior to the current bar being analyzed.
 Inside bar: A bar that is engulfed by the prior bar. From the high to low the values are less than the bar before it.
 Outside bar: A bar that englufs the prior bar. From the high to low the values are greater than the bar before it.
 Bull bar: A bar that has a close higher than its open.
 Bear bar: A bar that has a close lower than its open.
+Doji: A bar that has no difference in the open to close, or when the difference from open to close is less than (about) half the difference from high to low.
+Tail: The change in price outside of the open to close change.
+Realize gain/loss: When you exit out of a position or trade and the profit/loss of the trade is finalized or becomes real.
+Scale-in: When getting into a trade, buy/sell something, then continue to add on to the position size. Reduces initial risk.
+Scale-out: Wehn getting out of a trade, buy/sell something to close the trade, then continue to take off position sizes. Reduces risk over-time.
+Countertrend: Trading against the current trend taking place. Trading countertrend is buying when the market is in a bear trend and vice versa.
