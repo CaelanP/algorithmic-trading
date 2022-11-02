@@ -7,15 +7,15 @@ Straddle: Buying a call and a put at the same strike price with the same expirat
 Risk: The amount of money that can be lost. Risk will increase when making money on a trade since the value of the asset has increased, reduce risk by selling the asset.
 Trend: A security consistently changing in price, over a period of time.
 Bull trend: A security consistently going up over a period of time; higher highs, higher lows.
-Higher high: As a stock trends upwards, it causes the price to increase and the price will become higher than what it was, being a higher high.
-Higher low: As a stock trends upwards, it creates higher highs, when it devitates and goes down, then continues back upwards, that point where it stopped going down and went back up is a higher low.
+Higher high (HH): As a stock trends upwards, it causes the price to increase and the price will become higher than what it was, being a higher high.
+Higher low (HL): As a stock trends upwards, it creates higher highs, when it devitates and goes down, then continues back upwards, that point where it stopped going down and went back up is a higher low.
 Bear trend: A security consistently going down over a period of time; lower lows, lower highs.
-Lower low: As a stock trends downwards, it causes the price to decrease and the price will become lower than what it was, being a lower low.
-Lower high: As a stock trends upwards, it creates lower highs, when it devitates and goes up, then continues back downwards, that point where it stopped going up and went back down is a lower high.
-Trading range: When a security trades within a range, over a period of time.
+Lower low (LL): As a stock trends downwards, it causes the price to decrease and the price will become lower than what it was, being a lower low.
+Lower high (LH): As a stock trends upwards, it creates lower highs, when it devitates and goes up, then continues back downwards, that point where it stopped going up and went back down is a lower high.
+Trading range (TR): When a security trades within a range, over a period of time.
 Reversal: When a trend goes from a bull trend, to a bear trend; price goes from increasing to decreasing or vice versa.
-Breakout: When the price breaks out of any previous price point or point of resistance/support.
-Pullback: In a bull trend, when the low of a bar goes below the low of the prior bar. In a bear trend, when the high of a bar goes above the high of the prior bar. A large tail on top or bottom indicates a pullback on a smaller time frame.
+Breakout (BO): When the price breaks out of any previous price point or point of resistance/support.
+Pullback (PB): In a bull trend, when the low of a bar goes below the low of the prior bar. In a bear trend, when the high of a bar goes above the high of the prior bar. A large tail on top or bottom indicates a pullback on a smaller time frame. Bull: A pullback ends when a bar exceeds the high of the prior bar.
 Implied pullback: A pullback on a lower time frame. In a bull trend, a doji bar or bear bar even if it hasn't went below the low of the prior bar. In a bear trend, a doji or bull bar even if it hasn't went above the high or the prior bar.
 Swing trade: A trade with a longer duration than a scalp trade. Usually ranges from hours to days to months. Higher probability, lower reward, higher risk.
 Scalp trade: A trade with a generally short duration, shorter than a swing trade generally. Usually ranges from seconds to minutes to hours. Low probability, high rewards, low risk.
@@ -24,8 +24,8 @@ Entry bar: The bar that a trade is entered on.
 Follow-through/confirmation: Bar(s) after a signal or entry bar.
 Stop loss/limit/price: Price to get out of a trade at. Or set price to close a trade at.
 Context: The bars to the left, or the bars prior to the current bar being analyzed.
-Inside bar: A bar that is engulfed by the prior bar. From the high to low the values are less than the bar before it.
-Outside bar: A bar that englufs the prior bar. From the high to low the values are greater than the bar before it.
+Inside bar (IB or I): A bar that is engulfed by the prior bar. From the high to low the values are less than the bar before it.
+Outside bar (OB or O): A bar that englufs the prior bar. From the high to low the values are greater than the bar before it.
 Bull bar: A bar that has a close higher than its open.
 Bear bar: A bar that has a close lower than its open.
 Doji: A bar that has no difference in the open to close, or when the difference from open to close is less than (about) half the difference from high to low.
@@ -34,3 +34,15 @@ Realize gain/loss: When you exit out of a position or trade and the profit/loss 
 Scale-in: When getting into a trade, buy/sell something, then continue to add on to the position size. Reduces initial risk.
 Scale-out: Wehn getting out of a trade, buy/sell something to close the trade, then continue to take off position sizes. Reduces risk over-time.
 Countertrend: Trading against the current trend taking place. Trading countertrend is buying when the market is in a bear trend and vice versa.
+Instituition: Organizations that pool together funds on behalf of other and invest those funds.
+Hedging: Risk management strategy to reduce the risk of loss on a position. For instance if you buy NVDA and it's biggest competitor is Intel then you can hedge your losses by buying Intel.
+Bar counting: Getting a method to enter a trade. Method to help find PB entries.
+High 1 signal bar: In a bull trend or TR, after a PB when the high of the next bar goes above the current bar. Or high of the curernt bar goes above the high of the prior bar.
+High 1 entry bar: If the high of the next bar goes above the high 1 signal bar, it becomes a high 1 entry bar.
+Low 1 signal bar: In a bear trend or TR, after a PB when the low of the next bar goes below the current bar. Or low of the current bar goes below the low of the prior bar.
+Low 1 entry bar: If the low of the next bar goes below the low 1 signal bar, it becomes a low 1 entry bar.
+High/low 2+: Continue counting for each new high or low, reset count after a new breakout/pullback.
+Double top: When the price stops at the same price twice, and that is the max in a given duration. All double tops are low 2 sell setups.
+Double bottom: When the price stops at the same price twice, and that is the min in a given duration. All double bottoms are high 2 buy setups.
+Wedge top/wedge bear flag: When the price stops at the same price three times (usually not the same price but close) that is a max in a given duration. All wedge tops are low 3 sell setups
+Wedge bottom/wedge bull flag: When the price stops at the same price three times (usually not the same price but close) that is a min in a given duration. All wedge bottoms are high 3 buy setups
