@@ -1,0 +1,20 @@
+Going long/buying: When you buy something, it is referred to as going long. Generally it is making money as the underlying security increases in value.
+Going short/selling: When you sell something, it is referred to as going short, or shorting/selling. Generally it is making money as the underlying security decreases in value.
+Call option: A contract to purchase stock at a given price on a given expiration date, can be bought and sold. Limited downside, unlimited upside when bought. Unlimited downside, limited upside when sold. 
+Put option: A contract to sell a stock at a given price on a given expiration date, can be bought and sold. Limited downside, limited but greater upside when bought. Limited but greater downside, limited upside when sold. 
+Strike price: Price that an option can be executed at.
+Straddle: Buying a call and a put at the same strike price with the same expiration date. Limited upside, limited downside. So long as the stock moves a certain amount in either direction, a profit will be made. It requires the call and the put to cancel eachother out in profit/loss and as the profit of one exceeds the loss of the other, profit is then made.
+Risk: The amount of money that can be lost. Risk will increase when making money on a trade since the value of the asset has increased, reduce risk by selling the asset.
+Trend: A security consistently changing in price, over a period of time.
+Bull trend: A security consistently going up over a period of time; higher highs, higher lows.
+Higher high: As a stock trends upwards, it causes the price to increase and the price will become higher than what it was, being a higher high.
+Higher low: As a stock trends upwards, it creates higher highs, when it devitates and goes down, then continues back upwards, that point where it stopped going down and went back up is a higher low.
+Bear trend: A security consistently going down over a period of time; lower lows, lower highs.
+Lower low: As a stock trends downwards, it causes the price to decrease and the price will become lower than what it was, being a lower low.
+Lower high: As a stock trends upwards, it creates lower highs, when it devitates and goes up, then continues back downwards, that point where it stopped going up and went back down is a lower high.
+Trading range: When a security trades within a range, over a period of time.
+Reversal: When a trend goes from a bull trend, to a bear trend; price goes from increasing to decreasing or vice versa.
+Breakout: When the price breaks out of any previous price point or point of resistance/support.
+Pullback: When the price moves in an opposite direction to a trend and then continues with the trend. If it does not continue with the trend then it is simply a reversal.
+Swing trade: A trade with a longer duration than a scalp trade. Usually ranges from hours to days to months. Higher probability, lower reward, higher risk.
+    Scalp trade: A trade with a generally short duration, shorter than a swing trade generally. Usually ranges from seconds to minutes to hours. Low probability, high rewards, low risk.
