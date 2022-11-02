@@ -1,6 +1,6 @@
 Going long/buying: When you buy something, it is referred to as going long. Generally it is making money as the underlying security increases in value.
 Going short/selling: When you sell something, it is referred to as going short, or shorting/selling. Generally it is making money as the underlying security decreases in value.
-Call option: A contract to purchase stock at a given price on a given expiration date, can be bought and sold. Limited downside, unlimited upside when bought. Unlimited downside, limited upside when sold. 
+Call option: A contract to buy stock at a given price on a given expiration date, can be bought and sold. Limited downside, unlimited upside when bought. Unlimited downside, limited upside when sold. 
 Put option: A contract to sell a stock at a given price on a given expiration date, can be bought and sold. Limited downside, limited but greater upside when bought. Limited but greater downside, limited upside when sold. 
 Strike price: Price that an option can be executed at.
 Straddle: Buying a call and a put at the same strike price with the same expiration date. Limited upside, limited downside. So long as the stock moves a certain amount in either direction, a profit will be made. It requires the call and the put to cancel eachother out in profit/loss and as the profit of one exceeds the loss of the other, profit is then made.
@@ -18,3 +18,8 @@ Breakout: When the price breaks out of any previous price point or point of resi
 Pullback: When the price moves in an opposite direction to a trend and then continues with the trend. If it does not continue with the trend then it is simply a reversal.
 Swing trade: A trade with a longer duration than a scalp trade. Usually ranges from hours to days to months. Higher probability, lower reward, higher risk.
 Scalp trade: A trade with a generally short duration, shorter than a swing trade generally. Usually ranges from seconds to minutes to hours. Low probability, high rewards, low risk.
+Signal bar: The bar that signals to enter a trade.
+Entry bar: The bar that a trade is entered on.
+Follow-through: Bar(s) after a signal or entry bar.
+Stop limit/price: Price to get out of a trade at.
+Context: The bars to the left, or the bars prior to the current bar being analyzed.
