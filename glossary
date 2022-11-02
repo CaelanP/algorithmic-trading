@@ -21,7 +21,7 @@ Scalp trade: A trade with a generally short duration, shorter than a swing trade
 Signal bar: The bar that signals to enter a trade.
 Entry bar: The bar that a trade is entered on.
 Follow-through: Bar(s) after a signal or entry bar.
-Stop limit/price: Price to get out of a trade at.
+Stop loss/limit/price: Price to get out of a trade at. Or set price to close a trade at.
 Context: The bars to the left, or the bars prior to the current bar being analyzed.
 Inside bar: A bar that is engulfed by the prior bar. From the high to low the values are less than the bar before it.
 Outside bar: A bar that englufs the prior bar. From the high to low the values are greater than the bar before it.
