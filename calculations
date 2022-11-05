@@ -14,6 +14,6 @@ Simple Moving Average = sum(close list)/duration
 Volatility = high - low
 Volatility % = ((high - low)/close) * 100
 20 day high/low =  if min(low list) == today low: true means new low, if max(high list) == today high: true means new high
-bull bar = if high >= close > open: true means the bar is a bull bar
-bear bar = if low <= close < open: true means the bar is a bear bar
+bull bar = if close > open
+bear bar = if close < open
   False in both cases would indicate that it is a doji, or that the bar is an arbitrary bar since the open and close can be the same value
