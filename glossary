@@ -46,5 +46,6 @@ Double top: When the price stops at the same price twice, and that is the max in
 Double bottom: When the price stops at the same price twice, and that is the min in a given duration. All double bottoms are high 2 buy setups.
 Wedge top/wedge bear flag: When the price stops at the same price three times (usually not the same price but close) that is a max in a given duration. All wedge tops are low 3 sell setups
 Wedge bottom/wedge bull flag: When the price stops at the same price three times (usually not the same price but close) that is a min in a given duration. All wedge bottoms are high 3 buy setups
-Buying pressure: 
-Selling pressure: 
+Buying pressure: Contributing factors or indicators of bullish behaviour in a trend. For instance, gaps up on closes (the open of the next bar is above the close of the current bar), large bars closing on/near their highs, more consecutive bull bars than bear bars.
+Selling pressure: Contributing factors or indicators of bearing behaviour in a trend. For instance, gaps down on closes (the open of the next bar is below the close of the currennt bar), large bars closing on/near their lows, more consecutive bear bars than bull bars.
+Measured move(MM): From the beginning of a trend to an area near a large/strong breakout within a trend, then mirrored beyond what is shown proides a measured move profit target.
