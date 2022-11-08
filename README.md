@@ -16,7 +16,11 @@ Regarding both stocks and options, with Interactive Brokers it seems it can be s
 Can similarly get access to stocks and options through RBC's portal  
 Stocks  
 Finviz provides information for float, short float and short float ratio https://finviz.com/screener.ashx?v=111&ft=4  
+Alpaca https://alpaca.markets/docs/  
+Blankly https://docs.blankly.finance/  
 Options  
 Python end of the day options information https://thetadata-api.github.io/PythonAPI/tutorials/  
 Seems like websockets or something, pulls data from a site and gets the information in a series of queries https://polygon.io/docs/options/getting-started  
-CBOE Historical Options Data has provides a downloadable CSV file of a selected period https://www.cboe.com/us/options/market_statistics/daily/ https://www.cboe.com/us/options/market_statistics/historical_data/  
+CBOE Historical Options Data has provides a downloadable CSV file of a selected period https://www.cboe.com/us/options/market_statistics/daily/ https://www.cboe.com/us/options/market_statistics/historical_data/ https://www.cboe.com/us/options/market_data_services/  
+SEC open/available datasets/information https://www.sec.gov/data  
+FINRA api documentation for getting information on equity (short interest and general information on shorting), fixed income, FIRNA content, firms, registration https://developer.finra.org/docs#query_api https://developer.finra.org/catalog#query-api and more in-depth information/resources for information https://www.finra.org/finra-data  
