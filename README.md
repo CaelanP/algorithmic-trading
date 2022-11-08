@@ -17,7 +17,7 @@ Can similarly get access to stocks and options through RBC's portal
 SEC open/available datasets/information https://www.sec.gov/data  
 FINRA api documentation for getting information on equity (short interest and general information on shorting), fixed income, FIRNA content, firms, registration https://developer.finra.org/docs#query_api https://developer.finra.org/catalog#query-api and more in-depth information/resources for information https://www.finra.org/finra-data  
 Stocks  
-Finviz provides information for float, short float and short float ratio https://finviz.com/screener.ashx?v=111&ft=4  
+Finviz provides information for float, short float and short float ratio https://finviz.com/screener.ashx?v=111&ft=4 not sure what you wanted me to look at but this provides a good list of stocks being heavily shorted https://finviz.com/screener.ashx?v=152&f=sh_avgvol_o500,sh_relvol_o1.5,sh_short_o10&ft=4&o=-shortinterestshare  
 Alpaca https://alpaca.markets/docs/  
 Blankly https://docs.blankly.finance/  
 Options  
