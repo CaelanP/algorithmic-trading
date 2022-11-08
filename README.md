@@ -26,3 +26,4 @@ Seems like websockets or something, pulls data from a site and gets the informat
 CBOE Historical Options Data has provides a downloadable CSV file of a selected period https://www.cboe.com/us/options/market_statistics/daily/ https://www.cboe.com/us/options/market_statistics/historical_data/ https://www.cboe.com/us/options/market_data_services/  
 ORATS is expensive but does a lot and provides some information for a single cost(?) https://www.orats.com/data-api/ https://www.orats.com/historical-quotes/
 Historical option data is very expensive but seems in-depth, also provides example data to backtest on https://historicaloptiondata.com/  
+A website that outlines how to calculate greeks for options, as well as has explanations ofr the roles each one servers https://www.macroption.com/option-greeks/  
