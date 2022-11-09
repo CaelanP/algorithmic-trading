@@ -27,3 +27,5 @@ CBOE Historical Options Data has provides a downloadable CSV file of a selected 
 ORATS is expensive but does a lot and provides some information for a single cost(?) https://www.orats.com/data-api/ https://www.orats.com/historical-quotes/
 Historical option data is very expensive but seems in-depth, also provides example data to backtest on https://historicaloptiondata.com/  
 A website that outlines how to calculate greeks for options, as well as has explanations ofr the roles each one servers https://www.macroption.com/option-greeks/  
+Opening up an account lets us pull from this api for free https://documentation.tradier.com/brokerage-api  
+I've seen stuff on referencing scrapping data from yahoo finance or using yfinance in python  
