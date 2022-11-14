@@ -17,3 +17,13 @@ Volatility % = ((high - low)/close) * 100
 bull bar = if close > open
 bear bar = if close < open
   False in both cases would indicate that it is a doji, or that the bar is an arbitrary bar since the open and close can be the same value
+call = S*(e^(-q*t))*NORM.S.DIST(d1)-K*e^(-r*t)*NORM.S.DIST(d2)
+put = K*(e^(-r*t))*NORM.S.DIST(-d2)-S*e^(-q*t)*NORM.S.DIST(-d1)
+d1 = LN(S/K)+t(r-q+σ^2/2)/σ*SQRT(t)
+d2 = d1-σ*SQRT(T)
+s = underlying price
+k = strike price
+σ = volatility
+r = compounded risk-free interest rate
+q = compounded dividend yield
+t = time to expiration
