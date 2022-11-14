@@ -17,8 +17,10 @@ Volatility % = ((high - low)/close) * 100
 bull bar = if close > open
 bear bar = if close < open
   False in both cases would indicate that it is a doji, or that the bar is an arbitrary bar since the open and close can be the same value
-call = S*(e^(-q*t))*NORM.S.DIST(d1)-K*e^(-r*t)*NORM.S.DIST(d2)
-put = K*(e^(-r*t))*NORM.S.DIST(-d2)-S*e^(-q*t)*NORM.S.DIST(-d1)
+call = S*(EXP(-q*t))*NORM.S.DIST(d1,true)-K*EXP(-r*t)*NORM.S.DIST(d2,true)
+call delta = EXP(-q*t)*NORM.S.DIST(d1,true)
+put = K*(EXP(-r*t))*NORM.S.DIST(-d2,true)-S*EXP(-q*t)*NORM.S.DIST(-d1,true)
+put delta = EXP(-q*t)*(NORM.S.DIST(d1,true)-1)
 d1 = LN(S/K)+t(r-q+σ^2/2)/σ*SQRT(t)
 d2 = d1-σ*SQRT(T)
 s = underlying price
