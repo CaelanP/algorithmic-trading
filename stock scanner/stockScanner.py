@@ -64,13 +64,14 @@ for ticker in tickers:
         continue
 
     # calculate ATR, new high/low, check for ii, oi, ioi
-    print(), print(ticker.upper(), mclose[len(metrics) - 1])
+    atr = round((sum(mhigh) - sum(mlow)) / len(metrics), 2)
+    print(), print(ticker.upper(), mclose[len(metrics) - 1], atr, avgVolume)
 
     # check for new high/low
     if max(mhigh) == mhigh[len(metrics) - 1]:
-        print('New high in the past', len(metrics), 'days')
+        print('New high in the past', len(metrics) - 1, 'days')
     if min(mlow) == mlow[len(metrics) - 1]:
-        print('New low in the past', len(metrics), 'days')
+        print('New low in the past', len(metrics) - 1, 'days')
 
     # iterate through all data for a given time frame for a single ticker
     for j in range(len(metrics)):
@@ -85,22 +86,6 @@ for ticker in tickers:
             elif highCount == len(metrics):
                 tickerHigh.append(ticker)
         prevClose = mclose[j]
-
-        # determine bear/bull bar
-        if mhigh[j] >= mclose[j] > mopen[j]:  # bull bar
-            print("Bull bar", datetime.datetime.fromtimestamp(mtime[j]))
-
-            # if (0.8 > ((high[j] - close[j]) / (open[j] - low[j])) < 1.2 and (
-            #        (close[j] - open[j]) / (high[j] - low[j])) < 0.33) or (
-            #        high[j] - close[j] == 0 and open[j] - low[j] != 0):
-            #    print("Bull doji on", datetime.datetime.fromtimestamp(time[j]))
-        if mlow[j] <= mclose[j] < mopen[j]:  # bear bar
-            print("Bear bar", datetime.datetime.fromtimestamp(mtime[j]))
-
-            # if 0.8 > ((high[j] - open[j]) / (close[j] - low[j])) < 1.2 and (
-            #        (open[j] - close[j]) / (high[j] - low[j])) < 0.33:
-            #    print("Bear doji on", datetime.datetime.fromtimestamp(time[j]))
-
         # check how many bars the high/low shadows
         if mclose[j] < mclose[len(metrics) - 1]:
             # higherThan is number of days the current bar is higher than
@@ -109,17 +94,14 @@ for ticker in tickers:
             # lowerThan is number of days the current bar is lower than
             lowerThan += 1
 
-        # stock/volume volatility and percent volatility
-        N = N + float(mhigh[j]) - float(mlow[j])
+        # determine bear/bull bar
+        if mclose[j] > mopen[j]:  # bull bar
+            if mhigh[j] - mlow[j] / mclose[j] - mopen[j] >= 0.5:
+                print("Bull bar", datetime.datetime.fromtimestamp(mtime[j]))
 
-    N = round(N / len(metrics), 3)
-    percN = round(N / mclose[len(metrics) - 1] * 100, 2)
-
-    print("Volatility $", N, "%",  percN)
-    print("Average Volume", avgVolume, higherThan, highCount, lowCount)
-    # print("Stock: ", ticker[i], "\n", "Lower: ", lowCount, low, "\n",
-    # "Higher: ", highCount, high, "\n", "Volatility: ", N, hlDiff)
-# implement a plotter, matplitlib
+        if mclose[j] < mopen[j]:  # bear bar
+            if mhigh[j] - mlow[j] / mopen[j] - mclose[j] >= 0.5:
+                print("Bear bar", datetime.datetime.fromtimestamp(mtime[j]))
 
 for ticker in blacklist:
     with open('blacklist.csv', 'w', newline='') as csvfile:
