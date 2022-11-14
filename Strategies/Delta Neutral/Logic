@@ -1,0 +1,3 @@
+The delta I am looking for is the projected delta for tomorrow, and not the actual delta of the change from yesterday to today
+The delta that is relevant is the delta neutral for when the price deviates from its current price, relative to tomorrow
+The delta is calculated through the relation to the price change of the option to the price change of the stock, but we don't care because that is what had happened, and we need to project what will happen
