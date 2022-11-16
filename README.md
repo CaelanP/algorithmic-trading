@@ -18,7 +18,8 @@ SEC open/available datasets/information https://www.sec.gov/data
 FINRA api documentation for getting information on equity (short interest and general information on shorting), fixed income, FIRNA content, firms, registration https://developer.finra.org/docs#query_api https://developer.finra.org/catalog#query-api and more in-depth information/resources for information https://www.finra.org/finra-data  
 Stocks  
 Finviz provides information for float, short float and short float ratio https://finviz.com/screener.ashx?v=111&ft=4 not sure what you wanted me to look at but this provides a good list of stocks being heavily shorted https://finviz.com/screener.ashx?v=152&f=sh_avgvol_o500,sh_relvol_o1.5,sh_short_o10&ft=4&o=-shortinterestshare  
-Alpaca https://alpaca.markets/docs/  
+Alpaca 200 api calls per minute https://alpaca.markets/docs/  
+Interactive Brokers API: 50 api calls per second https://interactivebrokers.github.io/tws-api/index.html https://ibkr.info/article/1765  
 Blankly https://docs.blankly.finance/  
 Options  
 Fees per contract(potentially proprietary): https://ibkr.info/article/1184  
@@ -31,4 +32,4 @@ A website that outlines how to calculate greeks for options, as well as has expl
 Opening up an account lets us pull from this api for free https://documentation.tradier.com/brokerage-api  
 I've seen stuff on referencing scrapping data from yahoo finance or using yfinance in python https://finance.yahoo.com/quote/AAPL/options?p=AAPL&straddle=false provides free information for options  
 Someones free sql database they have exported option information to https://www.dolthub.com/repositories/post-no-preference/options/data/master/option_chain  
-Interactive Brokers API https://interactivebrokers.github.io/tws-api/index.html https://ibkr.info/article/1765  
+Interactive Brokers API: 50 api calls per second https://interactivebrokers.github.io/tws-api/index.html https://ibkr.info/article/1765  
