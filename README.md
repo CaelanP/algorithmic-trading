@@ -21,6 +21,7 @@ Finviz provides information for float, short float and short float ratio https:/
 Alpaca https://alpaca.markets/docs/  
 Blankly https://docs.blankly.finance/  
 Options  
+Fees per contract(potentially proprietary): https://ibkr.info/article/1184  
 Python end of the day options information https://thetadata-api.github.io/PythonAPI/tutorials/  
 Seems like websockets or something, pulls data from a site and gets the information in a series of queries https://polygon.io/docs/options/getting-started  
 CBOE Historical Options Data has provides a downloadable CSV file of a selected period https://www.cboe.com/us/options/market_statistics/daily/ https://www.cboe.com/us/options/market_statistics/historical_data/ https://www.cboe.com/us/options/market_data_services/  
@@ -30,3 +31,4 @@ A website that outlines how to calculate greeks for options, as well as has expl
 Opening up an account lets us pull from this api for free https://documentation.tradier.com/brokerage-api  
 I've seen stuff on referencing scrapping data from yahoo finance or using yfinance in python https://finance.yahoo.com/quote/AAPL/options?p=AAPL&straddle=false provides free information for options  
 Someones free sql database they have exported option information to https://www.dolthub.com/repositories/post-no-preference/options/data/master/option_chain  
+Interactive Brokers API https://interactivebrokers.github.io/tws-api/index.html https://ibkr.info/article/1765  
