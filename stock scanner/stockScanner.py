@@ -9,9 +9,10 @@ blacklist = []
 variables = [tickers, blacklist]
 tickerLow = []
 tickerHigh = []
-duration = 21
+duration = 20
+period = 365
 epoch_end = datetime.datetime.today().timestamp() - (86400 / 24)
-epoch_start = epoch_end - (86400 * duration)
+epoch_start = epoch_end - (86400 * period)
 
 
 # update tickers with class us_equity
@@ -42,22 +43,26 @@ for ticker in tickers:
     lowCount = 0
     higherThan = 0
     lowerThan = 0
+    bullbar = 0
+    bearbar = 0
+    percatr = 0
 
     # get stock information
     if not 'stockBlacklist.csv'.__contains__(ticker):
         metrics = interface.get_product_history(ticker, epoch_start, epoch_end, resolution='1d')
     # with open('metrics.csv', 'w', newline='') as csvmetrics:
+
+    if duration >= len(metrics) <= 50 or len(metrics) == 0:
+        blacklist.append(ticker)
+        continue
+
+    metriclen = len(metrics) - 1
     mhigh = metrics.high
     mopen = metrics.open
     mclose = metrics.close
     mlow = metrics.low
     mvolume = metrics.volume
     mtime = metrics.time
-
-    if len(metrics) == 0:
-        blacklist.append(ticker)
-        continue
-
     avgVolume = round(sum(mvolume) / len(metrics), 0)
     if avgVolume < 500000:
         blacklist.append(ticker)
@@ -65,13 +70,18 @@ for ticker in tickers:
 
     # calculate ATR, new high/low, check for ii, oi, ioi
     atr = round((sum(mhigh) - sum(mlow)) / len(metrics), 2)
-    print(), print(ticker.upper(), mclose[len(metrics) - 1], atr, avgVolume)
+    percatr = round(atr / mclose[metriclen] * 100, 2)
+    print(ticker.upper(), '$' + str(mclose[metriclen]), round(mclose[metriclen] - mclose[metriclen - 1], 2), '$' + str(atr), str(percatr) + '%', avgVolume)
 
     # check for new high/low
-    if max(mhigh) == mhigh[len(metrics) - 1]:
-        print('New high in the past', len(metrics) - 1, 'days')
-    if min(mlow) == mlow[len(metrics) - 1]:
-        print('New low in the past', len(metrics) - 1, 'days')
+    if max(mhigh[(metriclen - duration): len(metrics)]) == mhigh[metriclen]:
+        print('Higher than the past', duration, 'days')
+    if max(mhigh[(metriclen - 50): len(metrics)]) == mhigh[metriclen]:
+        print('Higher than the past', 50, 'days')
+    if min(mlow[(metriclen - duration): len(metrics)]) == mlow[metriclen]:
+        print('Lower than the past', duration, 'days')
+    if min(mlow[(metriclen - 50): len(metrics)]) == mlow[metriclen]:
+        print('Lower than the past', 50, 'days')
 
     # iterate through all data for a given time frame for a single ticker
     for j in range(len(metrics)):
@@ -87,21 +97,20 @@ for ticker in tickers:
                 tickerHigh.append(ticker)
         prevClose = mclose[j]
         # check how many bars the high/low shadows
-        if mclose[j] < mclose[len(metrics) - 1]:
+        if mclose[j] < mclose[metriclen]:
             # higherThan is number of days the current bar is higher than
             higherThan += 1
-        if mclose[j] > mclose[len(metrics) - 1]:
+        if mclose[j] > mclose[metriclen]:
             # lowerThan is number of days the current bar is lower than
             lowerThan += 1
 
         # determine bear/bull bar
-        if mclose[j] > mopen[j]:  # bull bar
-            if mhigh[j] - mlow[j] / mclose[j] - mopen[j] >= 0.5:
-                print("Bull bar", datetime.datetime.fromtimestamp(mtime[j]))
-
-        if mclose[j] < mopen[j]:  # bear bar
-            if mhigh[j] - mlow[j] / mopen[j] - mclose[j] >= 0.5:
-                print("Bear bar", datetime.datetime.fromtimestamp(mtime[j]))
+        if mclose[j] > mopen[j] and mhigh[j] - mlow[j] / mclose[j] - mopen[j] >= 0.5:  # bull bar
+            # print("Bull bar", datetime.datetime.fromtimestamp(mtime[j]))
+            bullbar += 1
+        if mclose[j] < mopen[j] and mhigh[j] - mlow[j] / mopen[j] - mclose[j] >= 0.5:  # bear bar
+            # print("Bear bar", datetime.datetime.fromtimestamp(mtime[j]))
+            bearbar += 1
 
 for ticker in blacklist:
     with open('blacklist.csv', 'w', newline='') as csvfile:
