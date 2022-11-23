@@ -3,6 +3,9 @@ Going short/selling: When you sell something, it is referred to as going short, 
 Call option: A contract to buy stock at a given price on a given expiration date, can be bought and sold. Limited downside, unlimited upside when bought. Unlimited downside, limited upside when sold. 
 Put option: A contract to sell a stock at a given price on a given expiration date, can be bought and sold. Limited downside, limited but greater upside when bought. Limited but greater downside, limited upside when sold. 
 Strike price: Price that an option can be executed at.
+in-the-money (ITM): For calls when the strike price is less than the price of the underlying. For puts when the strike price is greater than the price of the underlying.
+at-the-money (ATM): For calls and puts when the strike price is at the price of the underlying.
+out-of-the-money (OTM): For calls when the strike price is greater than the price of the underlying. For puts when the strike price is less than the price of the underlying.
 Straddle: Buying a call and a put at the same strike price with the same expiration date. Limited upside, limited downside. So long as the stock moves a certain amount in either direction, a profit will be made. It requires the call and the put to cancel eachother out in profit/loss and as the profit of one exceeds the loss of the other, profit is then made.
 Risk: The amount of money that can be lost. Risk will increase when making money on a trade since the value of the asset has increased, reduce risk by selling the asset.
 Trend: A security consistently changing in price, over a period of time.
